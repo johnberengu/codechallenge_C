@@ -1,0 +1,74 @@
+/* General layout */
+body {
+    display: flex;
+    padding: 200px;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    
+  }
+  
+  /* Films list styles */
+  ul#films {
+    width: 25%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  ul#films li {
+    padding: 25px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    background-color: chocolate;
+    font-size: 20px;
+  }
+  
+  ul#films li:hover {
+    background-color: red;
+  }
+  
+  .film.item {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Movie details styles */
+  #movie-details {
+    padding-left: 20px;
+  }
+  
+  #movie-details img {
+    width: 400px;
+    height: 800px;
+  }
+  
+  #buy-ticket {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #buy-ticket:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .sold-out {
+    color: rgb(243, 20, 20);
+    text-decoration: line-through;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  *{
+    background-color: blueviolet;
+  }
+  title{
+    color: black;
+  }
