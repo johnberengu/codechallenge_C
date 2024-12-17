@@ -21,8 +21,9 @@ body {
     padding: 25px;
     border-bottom: 1px solid white;
     cursor: pointer;
-    background-color: chocolate;
+    background-color: darkblue;
     font-size: 20px;
+     
   }
   
   ul#films li:hover {
@@ -40,7 +41,7 @@ body {
   }
   
   #movie-details img {
-    width: 400px;
+    width: 600px;
     height: 800px;
   }
   
@@ -72,3 +73,4 @@ body {
   title{
     color: black;
   }
+  
