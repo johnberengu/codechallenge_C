@@ -112,3 +112,51 @@ body {
   border: 2px solid gold; 
   background-color: #fff5cc; 
 }
+
+
+/* Style for the 'Add to Favorites' button */
+.favorite-btn {
+  background-color: blue; 
+  color: white; 
+  border: none; 
+  padding: 8px 16px; 
+  cursor: pointer;
+  font-size: 14px; 
+  border-radius: 5px; 
+  margin-right: 10px; 
+}
+
+/* Hover effect for the 'Add to Favorites' button */
+.favorite-btn:hover {
+  background-color: darkblue;
+}
+
+/* Style for the 'Delete' button */
+.delete-btn {
+  background-color: blue; 
+  color: white; 
+  border: none; 
+  padding: 8px 16px; 
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px; 
+}
+
+/* Hover effect for the 'Delete' button */
+.delete-btn:hover {
+  background-color: darkblue; /* Dark blue when hovered */
+}
+
+/* Ensure the film list items have space between buttons */
+.film.item {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+
+
+/* Styling the list items for the film details */
+.film.item button {
+  margin-left: 10px; 
+}
