@@ -107,3 +107,8 @@ h2 {
 body {
   background-color: #f4f4f4;
 }
+
+.favorite {
+  border: 2px solid gold; 
+  background-color: #fff5cc; 
+}
