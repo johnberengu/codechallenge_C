@@ -1,76 +1,109 @@
-/* General layout */
+
 body {
-    display: flex;
-    padding: 200px;
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    
-  }
-  
-  /* Films list styles */
-  ul#films {
-    width: 25%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-right: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  ul#films li {
-    padding: 25px;
-    border-bottom: 1px solid white;
-    cursor: pointer;
-    background-color: darkblue;
-    font-size: 20px;
-     
-  }
-  
-  ul#films li:hover {
-    background-color: red;
-  }
-  
-  .film.item {
-    font-size: 22px;
-    font-weight: bold;
-  }
-  
-  /* Movie details styles */
-  #movie-details {
-    padding-left: 20px;
-  }
-  
-  #movie-details img {
-    width: 600px;
-    height: 800px;
-  }
-  
-  #buy-ticket {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #buy-ticket:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  .sold-out {
-    color: rgb(243, 20, 20);
-    text-decoration: line-through;
-    pointer-events: none;
-    cursor: not-allowed;
-  }
-  *{
-    background-color: blueviolet;
-  }
-  title{
-    color: black;
-  }
-  
+  display: flex;
+  flex-direction: column; 
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+
+header {
+  background-color: #333; 
+  color: white; 
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+
+#content {
+  display: flex; 
+  flex: 1; 
+}
+
+
+ul#films {
+  width: 25%; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #ccc;
+  background-color: #f9f9f9;
+  height: 100vh; 
+  overflow-y: auto; 
+}
+
+ul#films li {
+  padding: 25px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  background-color: darkblue;
+  font-size: 20px;
+}
+
+ul#films li:hover {
+  background-color: red;
+}
+
+.film.item {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+#movie-details {
+  flex: 1; 
+  padding: 20px;
+  height: 100vh; 
+  overflow-y: auto; 
+}
+
+#movie-details img {
+  width: 600px;
+  height: 800px;
+}
+
+#buy-ticket {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#buy-ticket:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sold-out {
+  color: rgb(243, 20, 20);
+  text-decoration: line-through;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+
+}
+
+h2 {
+  background-color: white;
+  font-size: 30px;
+}
+
+
+body {
+  background-color: #f4f4f4;
+}
